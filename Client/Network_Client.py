@@ -64,3 +64,6 @@ def run():
 
     f.close()
     s.close()
+
+if __name__ == '__main__':
+    run()

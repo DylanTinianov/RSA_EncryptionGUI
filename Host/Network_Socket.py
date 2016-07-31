@@ -69,3 +69,8 @@ def send_receive_data():
 
     out_decrypt.close()
     s.close()
+
+if __name__ == '__main__':
+    create_socket()
+    key_gen()
+    send_receive_data()
