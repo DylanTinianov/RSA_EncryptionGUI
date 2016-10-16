@@ -4,34 +4,34 @@ This Software is designed to encrypt a Client's textfile and send it over a netw
 # Usage
 ## Host
 #### Port Number
-The Host must enter a port number for the network socket
+Upon usage, the Host will be prompted to enter port number for the network socket
 
 This port number, as well as the IP Address, must be provided to the Client
+
+The Host will have their IP Address printed to the screen for self reference
 
 For example:
 ```
 Enter port number: 1234
 ```
 ## Client
-#### Saving your data
-To begin using this software to encrypt a message, the Client must save their desired data as a text file in:
-```
-./client/Message/Message_to_encrypt.txt
-```
 #### IP Address and Port Number
-Upon usage, the Client will be prompted to enter the Host's IP Address, as well as a port number
+The Client will be prompted to enter the Host's IP Address and port number
 
-Both the IP Address and Port Number entered must match the Host's information
-
-The Host will have their IP Address printed to the screen for self reference
+Both the IP Address and Port Number entered must match the Host's information for a connection to be established
 
 For example:
 ```
 Enter Host IP Address: 192.168.0.19
 Enter port number: 1234   (matches the Host's port number)
 ```
+#### Saving your data
+To begin using this software to encrypt a message, the Client must save their desired data as a text file in:
+```
+./client/Message/Message_to_encrypt.txt
+```
 
-### Running to Software
+## Running to Software
 ##### Host
 The Host must run 'HostGUI.py'
 
