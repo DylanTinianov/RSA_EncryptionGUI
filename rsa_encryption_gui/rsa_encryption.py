@@ -1,5 +1,5 @@
-import Used_Functions
-import Prime_Generator
+import used_functions
+import prime_generator
 
 
 class PrivateKeyGen:
@@ -12,12 +12,12 @@ class PrivateKeyGen:
     """
     def __init__(self):
         prime_bit_length = 512  # Prime lengths for a 1024 bit key
-        self.p = Prime_Generator.generate_large_prime(prime_bit_length)
-        self.q = Prime_Generator.generate_large_prime(prime_bit_length)
+        self.p = prime_generator.generate_large_prime(prime_bit_length)
+        self.q = prime_generator.generate_large_prime(prime_bit_length)
         while self.p == "Failed":   # In case there is a failed attempt
-            self.p = Prime_Generator.generate_large_prime(prime_bit_length)
+            self.p = prime_generator.generate_large_prime(prime_bit_length)
         while self.q == "Failed":
-            self.p = Prime_Generator.generate_large_prime(prime_bit_length)
+            self.p = prime_generator.generate_large_prime(prime_bit_length)
 
         self.n = self.p * self.q
         self.phi_func = (self.p-1) * (self.q-1)
@@ -34,7 +34,7 @@ class PrivateKeyGen:
         return False
 
     def private_exponent(self):
-        self.d = Used_Functions.modInv(self.e, self.phi_func)
+        self.d = used_functions.modInv(self.e, self.phi_func)
 
     def decrypt(self, encrypted_message):
         decrypted_text = list()

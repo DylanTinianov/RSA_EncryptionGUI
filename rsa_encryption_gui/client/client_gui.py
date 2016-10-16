@@ -1,10 +1,10 @@
 from Tkinter import *
-from rsa_encryption_gui.Client import Network_Client
+from rsa_encryption_gui.client import network_client
 
 
 class Application(Frame):
     def run_encryption(self):
-        Network_Client.run()
+        network_client.run()
         self.run["state"] = DISABLED
 
     def create_widgets(self):
@@ -26,7 +26,7 @@ class Application(Frame):
         self.create_widgets()
 
 root = Tk()
-root.title("Dylan Tinianov RSA Software: Client")
+root.title("Dylan Tinianov RSA Software: client")
 app = Application(master=root)
 app.mainloop()
 root.destroy()

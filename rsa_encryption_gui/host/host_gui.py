@@ -1,19 +1,19 @@
 from Tkinter import *
-from rsa_encryption_gui.Host import Network_Socket
+from rsa_encryption_gui.host import network_socket
 
 
 class Application(Frame):
     def create_network_socket(self):
-        Network_Socket.create_socket()
+        network_socket.create_socket()
         self.createSocket["state"] = DISABLED
         self.keyGen["state"] = NORMAL
 
     def generate_key_pair(self):
-        Network_Socket.key_gen()
+        network_socket.key_gen()
         self.sendReceiveData["state"] = NORMAL
 
     def send_receive_data(self):
-        Network_Socket.send_receive_data()
+        network_socket.send_receive_data()
         self.keyGen["state"] = DISABLED
         self.sendReceiveData["state"] = DISABLED
 
@@ -49,7 +49,7 @@ class Application(Frame):
         self.create_widgets()
 
 root = Tk()
-root.title("Dylan Tinianov RSA Software: Host")
+root.title("Dylan Tinianov RSA Software: host")
 app = Application(master=root)
 app.mainloop()
 root.destroy()

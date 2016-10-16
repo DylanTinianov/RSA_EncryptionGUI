@@ -5,7 +5,7 @@
 """
 import socket
 import os
-from rsa_encryption_gui.RSA_Encrpytion import PrivateKeyGen
+from rsa_encryption_gui.rsa_encryption import PrivateKeyGen
 out_decrypt = open(os.path.join(os.path.dirname(__file__), 'decrypted_text.txt'), "w")
 key_private = None
 s = None
@@ -16,7 +16,7 @@ def create_socket():
     # Get the local IP over LAN.
     host = socket.gethostbyname(socket.gethostname())
 
-    print "Host IP:", host
+    print "host IP:", host
     port = 1234  # Use port number that's not in use.
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
