@@ -5,7 +5,9 @@
 """
 import socket
 import os
-from RSA_EncryptionGUI.RSA_Encrpytion import PublicKey
+from RSA_Encrpytion import PublicKey
+
+HOST_IP = "ENTER HOST IP HERE"  # Ex:  192.168.0.19
 
 
 def run():
@@ -22,11 +24,10 @@ def run():
             data[i][n] += " "
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    host = "192.168.0.19"
 
     # Use the same port number as the host
     port = 1234
-    s.connect((host, port))
+    s.connect((HOST_IP, port))
     print "Connected to socket"
 
     # Wait to receive the public key from the host

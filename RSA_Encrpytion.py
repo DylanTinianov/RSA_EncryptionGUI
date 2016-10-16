@@ -12,7 +12,7 @@ class PrivateKeyGen:
     """
     def __init__(self):
         prime_bit_length = 512  # Prime lengths for a 1024 bit key
-        self.p = Prime_Generator.generate_large_prime(prime_bit_length)     # F'kn huge prime numbers
+        self.p = Prime_Generator.generate_large_prime(prime_bit_length)
         self.q = Prime_Generator.generate_large_prime(prime_bit_length)
         while self.p == "Failed":   # In case there is a failed attempt
             self.p = Prime_Generator.generate_large_prime(prime_bit_length)

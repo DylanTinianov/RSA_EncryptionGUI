@@ -5,7 +5,7 @@
 """
 import socket
 import os
-from RSA_EncryptionGUI.RSA_Encrpytion import PrivateKeyGen
+from RSA_Encrpytion import PrivateKeyGen
 out_decrypt = open(os.path.join(os.path.dirname(__file__), 'decrypted_text.txt'), "w")
 key_private = None
 s = None
