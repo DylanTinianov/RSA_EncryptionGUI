@@ -1,5 +1,5 @@
 from Tkinter import *
-from Host import Network_Socket
+from rsa_encryption_gui.Host import Network_Socket
 
 
 class Application(Frame):

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 export PYTHONPATH="${PYTHONPATH}:../"
 
-python ./Client/ClientGUI.py
+python ./rsa_encryption_gui/Client/ClientGUI.py

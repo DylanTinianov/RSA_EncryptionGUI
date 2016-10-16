@@ -5,7 +5,7 @@
 """
 import socket
 import os
-from RSA_Encrpytion import PublicKey
+from rsa_encryption_gui.RSA_Encrpytion import PublicKey
 
 HOST_IP = "ENTER HOST IP HERE"  # Ex:  192.168.0.19
 
