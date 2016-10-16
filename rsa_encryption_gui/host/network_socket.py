@@ -11,13 +11,13 @@ key_private = None
 s = None
 
 
-def create_socket():
+def create_socket(port=raw_input("Enter port number: ")):
     global s
     # Get the local IP over LAN.
     host = socket.gethostbyname(socket.gethostname())
 
     print "host IP:", host
-    port = 1234  # Use port number that's not in use.
+    port = port  # Use port number that's not in use.
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)

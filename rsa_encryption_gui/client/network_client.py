@@ -8,7 +8,7 @@ import os
 from rsa_encryption_gui.rsa_encryption import PublicKey
 
 
-def run(host_ip=raw_input('Enter Host IP Address: ')):
+def run(host_ip=raw_input('Enter Host IP Address: '), port=raw_input('Enter port number: ')):
     data_file = open(os.path.join(os.path.dirname(__file__), 'Message/Message_to_encrypt.txt'), "r")
     out = open(os.path.join(os.path.dirname(__file__), 'Message/encrypted_text.txt'), "r+")
     data = list()
@@ -24,7 +24,7 @@ def run(host_ip=raw_input('Enter Host IP Address: ')):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Use the same port number as the host
-    port = 1234
+    port = port
     s.connect((host_ip, port))
     print "Connected to socket"
 
