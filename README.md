@@ -2,7 +2,7 @@
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
 # Usage
-### Client
+## Client
 #### Saving your data
 To begin using this software to encrypt a message, save your desired data as a text file in:
 ```
@@ -29,7 +29,7 @@ The Client may then choose to encrypt and send their message to the Host to be d
 
 
 
-### Host
+## Host
 The Host must run 'HostGUI.py'
 
 This can be done by running the following while in the project root:
