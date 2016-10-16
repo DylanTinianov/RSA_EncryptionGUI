@@ -2,16 +2,17 @@
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
 # Usage
-### Before Use
 #### IP Address
-Before usage, the desired Client must change the top line of code within the 'Network_Client.py'
+Upon usage, the Client will be prompted to enter the Host's IP Address
 
-``` Python
-HOST_IP = "ENTER HOST IP HERE" # Ex:  192.168.0.19
+The Host will have their IP Address printed to the screen for self reference
+
+```
+Enter Host IP Address (ex: 192.168.0.19)
 ```
 
 #### Saving your text
-To begin using this software to encrypt a message, save your desired text in:
+To begin using this software to encrypt a message, save your desired data in:
 ```
 ./Client/Message/Message_to_encrypt.txt
 ```
@@ -44,10 +45,7 @@ The Client may then choose to encrypt and send their message to the Host to be d
 ![alt text][client]
 
 ### Running on an IDE or Shell
-Useful information relating to the encryption/ decryption processes and connection statuses will be printed to the screen for both the Host and Client. The Host's IP address will also be printed for self reference.
-
-#### Disclaimer
-This Software is not to be used for any important secure data transfers, or to be held responsible for any lack of security. This Software does not claim to be 100% secure, and was merely made for fun.
+Useful information relating to the encryption/ decryption processes and connection statuses will be printed to the screen for both the Host and Client
 
 
 [socket]: https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/socket.png
