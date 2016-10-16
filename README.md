@@ -2,6 +2,8 @@
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
 # How to use the software
+## Before use
+Both the Host and Client must have a copy of the software
 ## Host
 #### Port Number
 Upon usage, the Host will be prompted to enter port number for the network socket
