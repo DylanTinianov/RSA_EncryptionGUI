@@ -2,6 +2,11 @@
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
 # Usage
+#### Saving your data
+To begin using this software to encrypt a message, save your desired data as a text file in:
+```
+./client/Message/Message_to_encrypt.txt
+```
 #### IP Address
 Upon usage, the Client will be prompted to enter the Host's IP Address
 
@@ -12,11 +17,6 @@ For example:
 Enter Host IP Address: 192.168.0.19
 ```
 
-#### Saving your text
-To begin using this software to encrypt a message, save your desired data in:
-```
-./Client/Message/Message_to_encrypt.txt
-```
 ### Host
 The Host must run 'HostGUI.py'
 
