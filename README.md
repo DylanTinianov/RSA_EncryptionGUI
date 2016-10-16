@@ -7,8 +7,9 @@ Upon usage, the Client will be prompted to enter the Host's IP Address
 
 The Host will have their IP Address printed to the screen for self reference
 
+For example:
 ```
-Enter Host IP Address (ex: 192.168.0.19)
+Enter Host IP Address: 192.168.0.19
 ```
 
 #### Saving your text
