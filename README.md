@@ -32,7 +32,7 @@ To begin using this software to encrypt a message, the Client must save their de
 ```
 
 ## Running to Software
-##### Host
+### Host
 The Host must run 'HostGUI.py'
 
 This can be done by running the following while in the project root:
@@ -50,7 +50,7 @@ Only after a socket is made, may a host generate a key pair for encryption
 
 The Host may now click 'Establish connection; send and recieve data' to wait for a Client to connect
 
-##### Client
+### Client
 The Client must run 'ClientGUI.py'
 This can be done by running the following while in the project root:
 ``` bash
