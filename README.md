@@ -1,4 +1,4 @@
-# RSA_EncruptionkGUI
+# RSA Encryption (with GUI)
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
 # Usage
