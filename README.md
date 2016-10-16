@@ -1,5 +1,5 @@
 # RSA_EncruptionkGUI
-This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decrpytion and storage. It contains a Client/ Host GUI, and is an implementation of an RSA crypto-system on textfiles over a network socket.
+This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decrpytion and storage
 
 # Usage
 ### Before Use
