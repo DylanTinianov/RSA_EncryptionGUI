@@ -7,10 +7,8 @@ import socket
 import os
 from rsa_encryption_gui.rsa_encryption import PublicKey
 
-HOST_IP = "ENTER HOST IP HERE"  # Ex:  192.168.0.19
 
-
-def run():
+def run(host_ip=raw_input('Enter Host IP Address')):
     data_file = open(os.path.join(os.path.dirname(__file__), 'Message/Message_to_encrypt.txt'), "r")
     out = open(os.path.join(os.path.dirname(__file__), 'Message/encrypted_text.txt'), "r+")
     data = list()
@@ -27,7 +25,7 @@ def run():
 
     # Use the same port number as the host
     port = 1234
-    s.connect((HOST_IP, port))
+    s.connect((host_ip, port))
     print "Connected to socket"
 
     # Wait to receive the public key from the host
