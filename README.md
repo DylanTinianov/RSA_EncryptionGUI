@@ -31,7 +31,7 @@ To begin using this software to encrypt a message, the Client must save their de
 ./client/Message/Message_to_encrypt.txt
 ```
 
-## How to run the software
+# How to run the software
 ## Host
 The Host must run 'HostGUI.py'
 
