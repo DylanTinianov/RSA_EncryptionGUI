@@ -2,6 +2,7 @@
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
 # Usage
+### Client
 #### Saving your data
 To begin using this software to encrypt a message, save your desired data as a text file in:
 ```
@@ -16,6 +17,17 @@ For example:
 ```
 Enter Host IP Address: 192.168.0.19
 ```
+#### Running to Software
+The Client must run 'ClientGUI.py'
+This can be done by running the following while in the project root:
+``` bash
+$ ./scripts/run_client.sh
+```
+The Client may then choose to encrypt and send their message to the Host to be decrypted and stored
+
+![alt text][client]
+
+
 
 ### Host
 The Host must run 'HostGUI.py'
@@ -35,15 +47,6 @@ Only after a socket is made, may a host generate a key pair for encryption
 
 The Host may now click 'Establish connection; send and recieve data' to wait for a Client to connect
 
-### Client
-The Client must run 'ClientGUI.py'
-This can be done by running the following while in the project root:
-``` bash
-$ ./scripts/run_client.sh
-```
-The Client may then choose to encrypt and send their message to the Host to be decrypted and stored
-
-![alt text][client]
 
 ### Running on an IDE or Shell
 Useful information relating to the encryption/ decryption processes and connection statuses will be printed to the screen for both the Host and Client
