@@ -37,17 +37,19 @@ To begin using this software to encrypt a message, the Client must save their de
 The Host must run 'HostGUI.py'
 
 This can be done by running the following while in the project root:
-``` bash
+``` Bash
 $ ./scripts/run_host.sh
 ```
 
 The Host may now set up a network socket
 
-![alt text][socket]
 
-Only after a socket is made, may a host generate a key pair for encryption
+<img src="https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/socket.png" width="200" height="50" />
 
-![alt text][key_gen]
+
+<img src="https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/key_gen.png" width="200" height="50" />
+
+Only after a socket is made, will generate a key pair become accessible to the host
 
 The Host may now click 'Establish connection; send and recieve data' to wait for a Client to connect
 
@@ -59,13 +61,7 @@ $ ./scripts/run_client.sh
 ```
 The Client may then choose to encrypt and send their message to the Host to be decrypted and stored
 
-![alt text][client]
-
+<img src="https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/client.png" width="300" height="50" />
 
 ### Running on an IDE or Shell
 Useful information relating to the encryption/ decryption processes and connection statuses will be printed to the screen for both the Host and Client
-
-
-[socket]: https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/socket.png
-[key_gen]: https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/key_gen.png
-[client]: https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/client.png
