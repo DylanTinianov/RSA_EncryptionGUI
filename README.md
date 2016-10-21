@@ -1,4 +1,4 @@
-<img src="https://github.com/DylanTinianov/Images/blob/master/Logo/myLogo.png"/ width="40">
+<img src="https://github.com/DylanTinianov/Images/blob/master/Logo/logo_black.png"/ width="40">
 # RSA Encryption (with GUI)
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
 
