@@ -47,9 +47,6 @@ The Host may now set up a network socket
 
 <img src="https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/socket.png" width="200" height="50" />
 
-
-<img src="https://github.com/DylanTinianov/Images/blob/master/RSA_Encryption/key_gen.png" width="200" height="50" />
-
 Only after a socket is made, will generate a key pair become accessible to the host
 
 The Host may now click 'Establish connection; send and recieve data' to wait for a Client to connect
