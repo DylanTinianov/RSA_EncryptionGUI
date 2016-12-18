@@ -10,6 +10,7 @@ class PrivateKeyGen:
         and phi(n) % e. The private_exponent method calculates the private exponent value (d) through using a modulo
         inverse function. The decrypt method decrypts the previously encrypted message using the private key.
     """
+
     def __init__(self):
         prime_bit_length = 512  # Prime lengths for a 1024 bit key
         self.p = prime_generator.generate_large_prime(prime_bit_length)
@@ -20,12 +21,13 @@ class PrivateKeyGen:
             self.p = prime_generator.generate_large_prime(prime_bit_length)
 
         self.n = self.p * self.q
-        self.phi_func = (self.p-1) * (self.q-1)
+        self.phi_func = (self.p - 1) * (self.q - 1)
         self.e = int()
         self.d = int()
 
     def public_exponent(self):
-        secure_e_values = [3, 5, 17, 257, 65537]    # Officially secure e values
+        # Officially secure e values
+        secure_e_values = [3, 5, 17, 257, 65537]
         for i in secure_e_values:
             if self.n % i != 0 and self.phi_func % i != 0:
                 self.e = i
@@ -46,7 +48,7 @@ class PrivateKeyGen:
                 pass
 
         for i in range(2):  # pop out the additional space and new line added at the end of the data
-            decrypted_text.pop(len(decrypted_text)-1)
+            decrypted_text.pop(len(decrypted_text) - 1)
 
         return decrypted_text
 
@@ -58,6 +60,7 @@ class PublicKey:
         reads through a plain text file, and encrypts the data with the public key using: ((a^e) % n), where a is
         a numerical value based off each character in the data.
     """
+
     def __init__(self, e, n):
         self.e = e
         self.n = n

@@ -3,6 +3,7 @@ from rsa_encryption_gui.host import network_socket
 
 
 class Application(Frame):
+
     def create_network_socket(self):
         network_socket.create_socket()
         self.createSocket["state"] = DISABLED
@@ -34,7 +35,8 @@ class Application(Frame):
         self.keyGen["state"] = DISABLED
 
         self.sendReceiveData = Button(self)
-        self.sendReceiveData["text"] = "Establish connection; send and receive data"
+        self.sendReceiveData[
+            "text"] = "Establish connection; send and receive data"
         self.sendReceiveData["command"] = self.send_receive_data
         self.sendReceiveData["state"] = DISABLED
 
