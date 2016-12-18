@@ -9,8 +9,10 @@ from rsa_encryption_gui.rsa_encryption import PublicKey
 
 
 def run(host_ip=raw_input('Enter Host IP Address: '), port=raw_input('Enter port number: ')):
-    data_file = open(os.path.join(os.path.dirname(__file__), 'Message/Message_to_encrypt.txt'), "r")
-    out = open(os.path.join(os.path.dirname(__file__), 'Message/encrypted_text.txt'), "r+")
+    data_file = open(os.path.join(os.path.dirname(__file__),
+                                  'Message/Message_to_encrypt.txt'), "r")
+    out = open(os.path.join(os.path.dirname(__file__),
+                            'Message/encrypted_text.txt'), "r+")
     data = list()
 
     # Retrieve the data you want to encrypt
@@ -55,7 +57,8 @@ def run(host_ip=raw_input('Enter Host IP Address: '), port=raw_input('Enter port
 
     # Send the encrypted data to the host to be decrypted/ stored
 
-    f = open(os.path.join(os.path.dirname(__file__), 'Message/encrypted_text.txt'), 'rb')
+    f = open(os.path.join(os.path.dirname(__file__),
+                          'Message/encrypted_text.txt'), 'rb')
     print 'Sending...'
     encrypted_data = f.read(8192)
     s.send(encrypted_data)

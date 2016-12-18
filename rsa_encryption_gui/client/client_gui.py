@@ -3,6 +3,7 @@ from rsa_encryption_gui.client import network_client
 
 
 class Application(Frame):
+
     def run_encryption(self):
         network_client.run()
         self.run["state"] = DISABLED
