@@ -8,7 +8,7 @@ import os
 from rsa_encryption_gui.rsa_encryption import PublicKey
 
 
-def run(host_ip=raw_input('Enter Host IP Address: '), port=raw_input('Enter port number: ')):
+def run(host_ip=raw_input('Enter Host IP Address: '), port=int(raw_input('Enter port number: '))):
     data_file = open(os.path.join(os.path.dirname(__file__),
                                   'Message/Message_to_encrypt.txt'), "r")
     out = open(os.path.join(os.path.dirname(__file__),

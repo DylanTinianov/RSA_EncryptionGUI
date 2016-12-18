@@ -6,13 +6,14 @@
 import socket
 import os
 from rsa_encryption_gui.rsa_encryption import PrivateKeyGen
+
 out_decrypt = open(os.path.join(
     os.path.dirname(__file__), 'decrypted_text.txt'), "w")
 key_private = None
 s = None
 
 
-def create_socket(port=raw_input("Enter port number: ")):
+def create_socket(port=int(raw_input("Enter port number: "))):
     global s
     # Get the local IP over LAN.
     host = socket.gethostbyname(socket.gethostname())
