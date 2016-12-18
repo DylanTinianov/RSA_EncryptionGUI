@@ -6,7 +6,8 @@
 import socket
 import os
 from rsa_encryption_gui.rsa_encryption import PrivateKeyGen
-out_decrypt = open(os.path.join(os.path.dirname(__file__), 'decrypted_text.txt'), "w")
+out_decrypt = open(os.path.join(
+    os.path.dirname(__file__), 'decrypted_text.txt'), "w")
 key_private = None
 s = None
 
