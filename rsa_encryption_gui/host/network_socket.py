@@ -39,6 +39,7 @@ def key_gen():
 
     key_private.private_exponent()
     print key_private.e, key_private.n
+    return key_private.e, key_private.n
 
 
 def send_receive_data():
