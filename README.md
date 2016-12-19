@@ -1,8 +1,8 @@
-![](https://github.com/DylanTinianov/Images/blob/master/Logo/logo_black.png)
-
 # RSA Encryption (with GUI) [![Build Status](https://travis-ci.org/DylanTinianov/RSA_EncryptionGUI.svg?branch=master)](https://travis-ci.org/DylanTinianov/RSA_EncryptionGUI)
 
 This Software is designed to encrypt a Client's textfile and send it over a network socket to a Host for decryption and storage
+
+![](https://github.com/DylanTinianov/Images/blob/master/Logo/logo_black.png)
 
 # How to use the software
 
